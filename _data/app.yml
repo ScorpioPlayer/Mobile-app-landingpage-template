@@ -2,7 +2,7 @@ name: SCORPIO PLAYER 2025
 description: All platform powerfull mordern video player with SCORPIO+ media streaming service
 full_description: '    <p>Scorpio Player is the ultimate modern video player app for your iPhone, iPad, Mac, and Apple Silicon devices. It lets you play any video, audio, image, or playlist file with ease and convenience.</p>  
       
-    <h2>iOS Native Video Player</h2>  
+    <h2>iOS/tvOS Native Video Player</h2>  
     <p>Experience the best video playback quality with the iOS native video player and its powerful decoding engine. You can also control the playback speed, resume playback, and enable hardware acceleration.</p>  
       
     <h2>Features</h2>  
@@ -31,11 +31,11 @@ android: https://forward.scorpioplayer.com/to?link=scorpio-plus-for-android-play
 iOS: https://forward.scorpioplayer.com/to?link=scorpio-plus-for-apple-app-store-iphone&app=scorpioplayer.com&type=doc
 microsoft: https://forward.scorpioplayer.com/to?link=scorpio-player-2025-for-pc&app=scorpioplayer.com&type=doc
 screenshots:
-  - 1.png
-  - 2.png
-  - 3.png
-  - 4.png
-  - 5.png
+  - tinified/1.png
+  - tinified/2.png
+  - tinified/3.png
+  - tinified/4.png
+  - tinified/5.png
 producthunt: https://scorpioplayer.com
 companies:
   - url: https://scorpioplayer.com
