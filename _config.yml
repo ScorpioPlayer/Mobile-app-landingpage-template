@@ -31,11 +31,11 @@ github: https://github.com/ScorpioPlayer/Feedback
 #webmaster_verifications:
 #  google: verification_code
 #google_analytics: UA-XXXXXXXXX-X
-#doorbell:
-#  id: doorbell_id
-#  appKey: doorbell_appKey
+doorbell:
+  id: 14298
+  appKey: 6kiADTQBP2Fj8DiEp2AYyLctcNydfeE9t3caw4kieyQGMq15NZVYFWteezkPQa9q
 
-#cookie_consent: true
+cookie_consent: true
 
 ### Build settings
 markdown: kramdown
