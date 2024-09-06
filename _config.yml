@@ -3,31 +3,29 @@
 # This config file contains the config of your webpages
 # You may also want to update /config/webpack.pwa.js in case you want to generate a Progressive Web App
 
-title: Mobile App Landing Page Template
-email: contact@sandoche.com
-description: Free to use static landing page template to showcase your mobile app
+title: SCORPIO PLAYER 2025 with SCORPIO+
+email: support@scorpioplayer.com
+description: All platform powerfull mordern video player with SCORPIO+ media streaming service
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mobileapplandingpage.learn.uno" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://scorpioplayer.com" # the base hostname & protocol for your site, e.g. http://example.com
 theme_color: '#efeeff'
-twitter_username: sandochee
-github_username:  sandoche
-author: Sandoche Adittane
+twitter_username: scorpio_player
+github_username:  ScorpioPlayer
+author: SCORPIOX, INC LIMITED
 logo: assets/images/large-logo.png
 twitter:
-  username: sandochee
+  username: scorpio_player
 social:
-  name: Sandoche Adittane
+  name: scorpio_player
   links:
-    - https://twitter.com/sandochee
-    - https://www.facebook.com/sandoche
-    - https://www.linkedin.com/in/sandoche
-    - https://plus.google.com/+SandocheADITTANE
-    - https://github.com/sandoche
+    - https://forward.scorpioplayer.com/to?link=scorpio-player-twitter&app=scorpioplayer.com&type=doc
+    - https://forward.scorpioplayer.com/to?link=scorpio-player-youtube&app=scorpioplayer.com&type=doc
+    - https://github.com/ScorpioPlayer/Feedback
 
 languages: ["en"]
 ampdir: amp
 
-github: https://github.com/sandoche/Mobile-app-landingpage-template
+github: https://github.com/ScorpioPlayer/Feedback
 
 ### Google webmaster tools, Google Analytics, Doorbell and Cookie consent uncomment and put the API key
 #webmaster_verifications:

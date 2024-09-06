@@ -1,16 +1,16 @@
 app:
   screenshots: Screenshots
   description: Description
-  featured: Featured in
+  featured: Integration with
 
 footer:
-  copyright: Made with ❤️ in Europe 🇪🇺 by <a href="https://www.sandoche.com" target="_blank">Sandoche</a>
+  copyright: Copyright © 2017-2024 SCORPIOX, INC LIMITED All rights reserved. <a href="https://scorpioplayer.com" target="_blank">scorpioplayer.com</a>
   links:
     - title: Github
-      url: https://github.com/sandoche/Mobile-app-landingpage-template
+      url: https://github.com/ScorpioPlayer/Feedback
       target: _blank
-    - title: Donate
-      url: https://paypal.me/kanbanote
+    - title: YouTube
+      url: https://www.youtube.com/@scorpio_player
       target: _blank
     - title: Privacy
       url: /privacy

@@ -1,21 +1,46 @@
-name: Mobile App Name
-description: A super tagline for the mobile app
-full_description: 'A more complete description of the mobile app<br>
-<br>With a lot of features:
-<br>- Feature 1
-<br>- Feature 2
-<br>- Feature 3'
-android: https://telegra.ph/Replace-this-link-07-23
-iOS: https://telegra.ph/Replace-this-link-07-23
-web: https://telegra.ph/Replace-this-link-07-23
+name: SCORPIO PLAYER 2025
+description: All platform powerfull mordern video player with SCORPIO+ media streaming service
+full_description: '    <p>Scorpio Player is the ultimate modern video player app for your iPhone, iPad, Mac, and Apple Silicon devices. It lets you play any video, audio, image, or playlist file with ease and convenience.</p>  
+      
+    <h2>iOS Native Video Player</h2>  
+    <p>Experience the best video playback quality with the iOS native video player and its powerful decoding engine. You can also control the playback speed, resume playback, and enable hardware acceleration.</p>  
+      
+    <h2>Features</h2>  
+    <ul>  
+        <li><strong>Plays Everything from Anywhere:</strong> Access your favorite content from various sources, such as debrid services, Scorpio Player server, web servers, cloud services, indexers, and more. From Files to OneDrive, OneDrive for Business, DropBox, SAMBA/CIFS, SFTP/SSH/WebDAV, and specially Scorpio Media Server for high performance lossless streaming, from your home Windows PC, Docker server to mobile device.</li>  
+        <li><strong>SCORPIO+ Service:</strong> Discover movies and TV shows with metadata, watch trailers, add to your Watchlist, view trending and popular titles, and more. You can also search movies and TV shows and open IMDb, Rotten Tomatoes, and Metacritic websites with one tap.</li>  
+        <li><strong>SCORPIO+ User Account:</strong> Create multiple profiles to have separate browse history and continue watching where you left off from your last session.</li>  
+        <li><strong>SCORPIO+ Sync:</strong> Syncs with your account to configure favorite media collection settings specific to your account, syncs your playback progress across your devices, and syncs your watchlists across your devices.</li>  
+        <li><strong>AI Subtitle Generation and Transcription:</strong> Use AI to generate and transcribe subtitles.</li>  
+        <li><strong>Subtitle Search and Download:</strong> Search for and download subtitles within the app for your video content.</li>  
+        <li><strong>Live Translation:</strong> Available for foreign language subtitles.</li>  
+        <li><strong>Built-in Web Browser Transfer Server:</strong> Transfer files from your Mac/PC/Devices by using Browser to your device with a simple tap.</li>  
+        <li><strong>Debrid Services Support:</strong> Stream content from your own account from Real-debrid, All-debrid, Premiumize.me, and other debrid services.</li>  
+        <li><strong>Media Server Support:</strong> Connect to your own Scorpio Media Server to access your media library anytime, anywhere. Now also compatible with Jellyfin Media Server and Emby Media Server.</li>  
+        <li><strong>Web Servers Support:</strong> Stream content from your own WebDAV, SFTP, FTP, NFS, SMB/CIFS, SMB2, IPTV m3u Playlist, Dropbox, OneDrive, OneDrive for Business, ASP.NET File Server, and more.</li>  
+        <li><strong>Download Client Support:</strong> Link to download client aria2, Synology Download Station, and other download clients to enqueue your next download task.</li>  
+        <li><strong>Indexers Integration with SCORPIO+:</strong> Browse and search content from Jackett API, Sonarr API, Radarr API, and other indexers.</li>  
+        <li><strong>Dark and Light Theme:</strong> Choose between dark and light themes to suit your preference and device settings.</li>  
+        <li><strong>Multiple Languages Support:</strong> Enjoy Scorpio Player in English, Spanish, French, German, Japanese, Chinese, and more languages.</li>  
+        <li><strong>Supported Formats:</strong> mp4, mkv, mp3, avi, rmvb, flac, webm, opus, wav, m2ts, flv, mpg, m3u, mov, vob, mpeg, wma, f4v, rm, H264, H265, HEVC, VP9, AV1, and other mainstream formats and codecs.</li>  
+        <li><strong>Supported Subtitles Formats:</strong> srt, ssa, ass, sup, lrc, smi, MicroDVD, SubRip, Substationalpha, SubViewer, ttml, WEBVTT, Youtube specific XML format, HDMV PGS Image Subtitle, and other mainstream formats. And Lyrics!</li>  
+    </ul>  
+  
+    <p>Scorpio Player is the ultimate media player app for your Apple devices. Download it today and enjoy your media like never before.</p>  '
+android: https://forward.scorpioplayer.com/to?link=scorpio-plus-for-android-play-store&app=scorpioplayer.com&type=doc
+iOS: https://forward.scorpioplayer.com/to?link=scorpio-plus-for-apple-app-store-iphone&app=scorpioplayer.com&type=doc
+microsoft: https://forward.scorpioplayer.com/to?link=scorpio-player-2025-for-pc&app=scorpioplayer.com&type=doc
 screenshots:
   - 1.png
   - 2.png
   - 3.png
   - 4.png
-producthunt: https://telegra.ph/Replace-this-link-07-23
+  - 5.png
+producthunt: https://scorpioplayer.com
 companies:
-  - url: https://telegra.ph/Replace-this-link-07-23
-    image: androidpolice.png
-  - url: https://telegra.ph/Replace-this-link-07-23
-    image: producthunt.png
+  - url: https://scorpioplayer.com
+    image: jellyfin.jpg
+  - url: https://scorpioplayer.com
+    image: emby.png
+  - url: https://scorpioplayer.com
+    image: plex.jpg
