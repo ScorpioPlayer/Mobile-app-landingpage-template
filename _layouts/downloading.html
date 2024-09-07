@@ -6,7 +6,8 @@ layout: default
     <img class="app__logo" src="/assets/images/appicon.png" alt="{{ site.data.app.name }} Icon">
   </div>
   <div class="app__infos">
-    <h1 class="app__name">{{ site.data.app.name }}</h1>
+    <h1 class="app__name">{{ site.data.app.name }}</h1>  
+    <span style="color: silver; font-weight: 300;">{{ site.data.strings.app.fremium }}</span> 
     <p class="app__description">{{ site.data.app.description }}</p>
     <div class="app__buttons app__buttons--desktop">
       {% if site.data.app.apk != false %}
@@ -14,7 +15,7 @@ layout: default
       {% endif %}
 
       {% if site.data.app.apk != false %}
-      <a href="{{ site.data.app.apk }}" class="app__button-play" target="_blank"><img src="/assets/images/firetv-badge-round.png" alt="Get .APK"></a>
+      <a href="{{ site.data.app.apk }}" class="app__button-play" target="_blank"><img src="/assets/images/firetv-badge-round.png" alt="Get .APK FireTV"></a>
       {% endif %}
 
     </div>
@@ -27,7 +28,7 @@ layout: default
   {% endif %}
   
   {% if site.data.app.apk != false %}
-  <a href="{{ site.data.app.apk }}" class="app__button-play" target="_blank"><img src="/assets/images/firetv-badge-round.png" alt="Get .APK"></a>
+  <a href="{{ site.data.app.apk }}" class="app__button-play" target="_blank"><img src="/assets/images/firetv-badge-round.png" alt="Get .APK FireTV"></a>
   {% endif %}
 
 </div>
@@ -49,27 +50,61 @@ layout: default
     <h1 class="app__name">{{ site.data.mediaserver.name }}</h1>
     <p class="app__description">{{ site.data.mediaserver.description }}</p>
     <div class="app__buttons app__buttons--desktop">
-      {% if site.data.mediaserver.macos != false %}
-      <a href="{{ site.data.mediaserver.macos }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>
-      {% endif %}
-
 
       {% if site.data.mediaserver.microsoft != false %}
       <a href="{{ site.data.mediaserver.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
-      {% endif %}
-      
-
-      {% if site.data.mediaserver.dmg != false %}
-      <a href="{{ site.data.mediaserver.dmg }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play"></a>
       {% endif %}
 
       
       {% if site.data.app.docker != false %}
       <a href="{{ site.data.app.docker }}" class="app__button-play" target="_blank"><img src="/assets/images/docker-badge-round.png" alt="Get .APK"></a>
       {% endif %}
+
+      {% if site.data.app.installer != false %}
+      <a href="{{ site.data.app.installer }}" class="app__button-play" target="_blank"><img src="/assets/images/clickonce-badge.png" alt="Get .APK"></a>
+      {% endif %}
     </div>
   </div>
 </header>
+
+
+<div class="app__buttons app__buttons--mobile container">
+
+  {% if site.data.mediaserver.microsoft != false %}
+  <a href="{{ site.data.mediaserver.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
+  {% endif %}
+
+  {% if site.data.app.docker != false %}
+  <a href="{{ site.data.app.docker }}" class="app__button-play" target="_blank"><img src="/assets/images/docker-badge-round.png" alt="Get .APK"></a>
+  {% endif %}
+
+  {% if site.data.app.installer != false %}
+  <a href="{{ site.data.app.installer }}" class="app__button-play" target="_blank"><img src="/assets/images/clickonce-badge.png" alt="Get .APK"></a>
+  {% endif %}
+  
+</div>
+
+
+<header class="app__header container">
+  <div class="app__logo-wrapper">
+    <img class="app__logo" src="/assets/images/icon.png" alt="{{ site.data.app.name }} Icon">
+  </div>
+  <div class="app__infos">
+    <h1 class="app__name">{{ site.data.mediaserver.name }}  <span style="color: silver; font-weight: 300;">{{ site.data.strings.app.macos }}</span> </h1>
+    <p class="app__description">{{ site.data.mediaserver.description }}</p>
+    <div class="app__buttons app__buttons--desktop">
+      {% if site.data.mediaserver.macos != false %}
+      <a href="{{ site.data.mediaserver.macos }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>
+      {% endif %}
+
+      {% if site.data.mediaserver.dmg != false %}
+      <a href="{{ site.data.mediaserver.dmg }}" class="app__button-play" target="_blank"><img src="/assets/images/dmg-badge.png" alt="Get on .DMG Installer"></a>
+      {% endif %}
+
+    </div>
+  </div>
+</header>
+
 
 <section class="app__fulldescription app__section container">
   <h2 class="app__section-title">{{ site.data.strings.mediaserver.description }}</h2>
@@ -84,16 +119,7 @@ layout: default
   {% endif %}
   
   {% if site.data.mediaserver.dmg != false %}
-  <a href="{{ site.data.mediaserver.dmg }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play"></a>
-  {% endif %}
-  
-
-  {% if site.data.mediaserver.microsoft != false %}
-  <a href="{{ site.data.mediaserver.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
-  {% endif %}
-
-  {% if site.data.app.docker != false %}
-  <a href="{{ site.data.app.docker }}" class="app__button-play" target="_blank"><img src="/assets/images/docker-badge-round.png" alt="Get .APK"></a>
+  <a href="{{ site.data.mediaserver.dmg }}" class="app__button-play" target="_blank"><img src="/assets/images/dmg-badge.png" alt="Get on .DMG Installer"></a>
   {% endif %}
   
 </div>

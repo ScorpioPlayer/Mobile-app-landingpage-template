@@ -8,6 +8,7 @@ layout: default
 		<div class="hamburger"></div>
 
 		<ul class="main-nav main-nav-mob">
+      <li class="nav-item"><a href="/">FEATURES</a></li>
       <li class="nav-item"><a target="_blank" href="https://subscription.scorpioplayer.com/pricing">SCORPIO+</a></li>
 			<li class="nav-item"><a target="_blank" href="https://scorpioplayer.com/api/Chatbot/Index">AI</a></li>
 			<li class="nav-item"><a target="_blank" href="https://blog.scorpioplayer.com/">BLOG</a></li>
@@ -26,6 +27,7 @@ layout: default
   </div>
   <div class="app__infos">
     <h1 class="app__name">{{ site.data.app.name }}</h1>
+    <span style="color: silver; font-weight: 300;">{{ site.data.strings.app.fremium }}</span> 
     <p class="app__description">{{ site.data.app.description }}</p>
     <div class="app__buttons app__buttons--desktop">
       {% if site.data.app.iOS != false %}
