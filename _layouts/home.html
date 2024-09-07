@@ -111,6 +111,30 @@ layout: navigation
   </div>
 </section>
 
+
+<section class="promo-section">  
+  <div class="container">  
+    <h1 class="app__section-title center-align"><em>&quot;{{ site.data.strings.app.features }}&quot;</em></h1>  
+    <p class="app__section-desc center-align"><em>&quot;{{ site.data.strings.app.features_desc }}&quot;</em></p>      
+  </div>  
+</section>  
+
+
+<section class="app__features app__section container">  
+  <div class="features">  
+    {% for feature in site.data.features %}  
+      <div class="feature">  
+        <i class="{{ feature.icon }}"></i>  
+        <div>  
+          <h3>{{ feature.title }}</h3>  
+          <p>{{ feature.description }}</p>  
+        </div>  
+      </div>  
+    {% endfor %}  
+  </div>   
+</section>  
+
+
 <section class="app__testimonials app__section container">  
   <h1 class="app__section-title center-align">{{ site.data.strings.app.testimonials }}</h1>  
   <p class="app__section-desc center-align">{{ site.data.strings.app.testimonials_desc }}</p>  
@@ -126,6 +150,10 @@ layout: navigation
     {% endfor %}  
   </div>  
 </section>  
+
+
+
+
 
 
 <section class="promo-section">  

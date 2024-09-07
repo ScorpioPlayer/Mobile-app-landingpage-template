@@ -780,3 +780,40 @@ $dark-border: #444444;
       width: 150px; // Adjust size as needed  
   }  
 }  
+
+// -------------------------------------------------------------- features
+
+.features {  
+  display: grid;  
+  grid-template-columns: 1fr;  
+  gap: 20px;  
+  padding: 20px;  
+  
+  .feature {  
+    display: flex;  
+    align-items: center;  
+  
+    i {  
+      font-size: 2rem;  
+      color: #6a1b9a; // Purple color  
+      margin-right: 15px;  
+    }  
+  
+    h3 {  
+      color: silver;  
+      margin: 0;  
+    }  
+  
+    p {  
+      color: silver;  
+      opacity: 0.7;  
+      margin: 0;  
+    }  
+  }  
+}  
+  
+@media (min-width: 768px) {  
+  .features {  
+    grid-template-columns: 1fr 1fr;  
+  }  
+}  

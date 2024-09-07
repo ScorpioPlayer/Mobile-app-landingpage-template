@@ -4,7 +4,8 @@ description_apk: Sideload .APK installer for Android Phone, Android TV, Amazon F
 description_xbox: Best video/music player for Xbox Series S/X that offers you, Smooth video playback with fast hardware decoding for HEVC/H265/10bit 4K
 full_description: '    <p>Scorpio Player is the ultimate modern video player app for your iPhone, iPad, Mac, and Apple Silicon devices. It lets you play any video, audio, image, or playlist file with ease and convenience.</p>  
       
-    <h2>iOS/tvOS Native Video Player</h2>  
+    <h3>iOS/tvOS/macoS*/Xbox/Windows10/11/Android/AndroidTV/FireTV</h3>  
+    <h2>Native Video Player</h2>  
     <p>Experience the best video playback quality with the iOS native video player and its powerful decoding engine. You can also control the playback speed, resume playback, and enable hardware acceleration.</p>  
       
     <h2>Features</h2>  
@@ -67,5 +68,5 @@ companies:
     image: jellyfin.jpg
   - url: https://scorpioplayer.com
     image: emby.png
-  - url: https://scorpioplayer.com
-    image: plex.jpg
+  # - url: https://scorpioplayer.com
+  #   image: plex.jpg

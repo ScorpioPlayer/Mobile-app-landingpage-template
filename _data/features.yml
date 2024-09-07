@@ -1,0 +1,127 @@
+
+- icon: "fa-solid fa-play-circle"  
+  title: "Plays Everything from Anywhere"  
+  description: "Access your favorite content from various sources, such as debrid services, Scorpio Player server, web servers, cloud services, indexers, and more."  
+
+- icon: "fa-solid fa-server"  
+  title: "Emby, and Jellyfin"  
+  description: "Connect with Emby, and Jellyfin to play videos (while home or away) and keep your watched history in SCORPIO+."  
+
+- icon: "fa-solid fa-star"  
+  title: "SCORPIO+ Service"  
+  description: "Discover movies and TV shows with metadata, watch trailers, add to your Watchlist, view trending and popular titles, and more. You can also search movies and TV shows and open IMDb, Rotten Tomatoes, and Metacritic websites with one tap."  
+  
+- icon: "fa-solid fa-user"  
+  title: "SCORPIO+ User Account"  
+  description: "Create multiple profiles to have separate browse history and continue watching where you left off from your last session."  
+  
+- icon: "fa-solid fa-sync"  
+  title: "SCORPIO+ Sync"  
+  description: "Syncs with your account to configure favorite media collection settings specific to your account, syncs your playback progress across your devices, and syncs your watchlists across your devices."  
+  
+- icon: "fa-solid fa-stream"  
+  title: "IPTV m3u Playlist Support"  
+  description: "Support for IPTV m3u playlist URLs. Manage multiple m3u URLs within the app and sync them across your devices."  
+
+- icon: "fa-solid fa-brain"  
+  title: "AI Subtitle Generation and Transcription"  
+  description: "Use AI to generate and transcribe subtitles."  
+  
+- icon: "fa-solid fa-search"  
+  title: "Subtitle Search and Download"  
+  description: "Search for and download subtitles within the app for your video content."  
+  
+- icon: "fa-solid fa-globe"  
+  title: "Live Translation"  
+  description: "Available for foreign language subtitles."  
+  
+- icon: "fa-solid fa-upload"  
+  title: "Built-in Web Browser Transfer Server (iOS Only)"  
+  description: "Transfer files from your Mac/PC/Devices by using Browser to your device with a simple tap."  
+  
+- icon: "fa-solid fa-link"  
+  title: "Debrid Services Support"  
+  description: "Stream content from your own account from Real-debrid, All-debrid, Premiumize.me, and other debrid services."  
+  
+- icon: "fa-solid fa-server"  
+  title: "Media Server Support"  
+  description: "Connect to your own Scorpio Media Server to access your media library anytime, anywhere. Now also compatible with Jellyfin Media Server and Emby Media Server."  
+  
+- icon: "fa-solid fa-globe"  
+  title: "Web Servers Support"  
+  description: "Stream content from your own WebDAV, SFTP, FTP, NFS, SMB/CIFS, SMB2, IPTV m3u Playlist, Dropbox, OneDrive, OneDrive for Business, ASP.NET File Server, and more."  
+  
+- icon: "fa-solid fa-download"  
+  title: "Download Client Support"  
+  description: "Link to download client aria2, Synology Download Station, and other download clients to enqueue your next download task."  
+  
+- icon: "fa-solid fa-search-plus"  
+  title: "Indexers Integration with SCORPIO+"  
+  description: "Browse and search content from Jackett API, Sonarr API, Radarr API, and other indexers."  
+  
+- icon: "fa-solid fa-adjust"  
+  title: "Dark and Light Theme"  
+  description: "Choose between dark and light themes to suit your preference and device settings."  
+  
+- icon: "fa-solid fa-language"  
+  title: "Multiple Languages Support"  
+  description: "Enjoy Scorpio Player in English, Spanish, French, German, Japanese, Chinese, and more languages."  
+  
+- icon: "fa-solid fa-file-video"  
+  title: "Supported Formats"  
+  description: "mp4, mkv, mp3, avi, rmvb, flac, webm, opus, wav, m2ts, flv, mpg, m3u, mov, vob, mpeg, wma, f4v, rm, H264, H265, HEVC, VP9, AV1, and other mainstream formats and codecs."  
+  
+- icon: "fa-solid fa-file-alt"  
+  title: "Supported Subtitles Formats"  
+  description: "srt, ssa, ass, sup, lrc, smi, MicroDVD, SubRip, Substationalpha, SubViewer, ttml, WEBVTT, Youtube specific XML format, HDMV PGS Image Subtitle, and other mainstream formats. And Lyrics!"  
+
+
+- icon: "fa-solid fa-gauge-high"  
+  title: "High-performance playback"  
+  description: "Silky-smooth playback of 4K (Ultra-HD) HDR and HDR10+ video, with efficient hardware decoding of h.264 and h.265."  
+- icon: "fa-solid fa-closed-captioning"  
+  title: "Super-easy subtitles"  
+  description: "Bring your own, or add subtitles in seconds with free, one-tap downloads from OpenSubtitles."  
+- icon: "fa-solid fa-closed-captioning"  
+  title: "Drag and drop transfers"  
+  description: "Use AirDrop, iTunes, FTP, or web browser to transfer videos in a snap. No cables required. (iOS only)"  
+- icon: "fa-solid fa-sync-alt"  
+  title: "Sync up with SCORPIO+"  
+  description: "Connect with SCORPIO+ to keep tabs on what you've watched by scrobbling play history and add to your account watchlist."  
+# - icon: "fa-solid fa-heart"  
+#   title: "Custom collections & playlists (UWP Only)"  
+#   description: "Create collections and playlists of your movies, TV shows, and home videos in a snap. Shuffle and loop as you please."  
+# - icon: "fa-solid fa-plane"  
+#   title: "Videos on the go"  
+#   description: "Stream from AirStash, SanDisk Connect, and other Wi-Fi travel drives to play content no matter where you are."  
+- icon: "fa-solid fa-layer-group"  
+  title: "Smart groups"  
+  description: "Automatically group files into title base on IMDb, versions, and duplicates of a movie and display them as a single item."  
+- icon: "fa-solid fa-language"  
+  title: "Multi-language support"  
+  description: "Whether you say hello, bonjour, 你好, or guten tag - we have you covered with support for 40+ languages and dialects."  
+- icon: "fa-solid fa-theater-masks"  
+  title: "Home theater & projectors (UWP Only)"  
+  description: "Versatile zoom, crop, aspect ratio, and alignment options allow for use with high-end theater environments."  
+# - icon: "fa-solid fa-arrow-up-right-from-square"  
+#   title: "Advanced video upscaling"  
+#   description: "Smart video upscaling allows lower resolution videos to look amazing, even on the largest screens."  
+
+- icon: "fa-solid fa-wifi"  
+  title: "UPnP & DLNA (UWP Only)"  
+  description: "Tap into UPnP/DLNA apps like Kodi (XBMC), Serviio, and others to browse, stream, and download videos."  
+- icon: "fa-solid fa-hdd"  
+  title: "Get more storage (Except Android)"  
+  description: "Add extra local storage by connecting a SanDisk iXpand drive or other external USB drive on iPhone, iPad, or Mac, PC, Xbox External Hard Drive."  
+# - icon: "fa-solid fa-child"  
+#   title: "Parental controls"  
+#   description: "Control the types of content your little ones can access with easily configurable rating and folder controls."  
+- icon: "fa-solid fa-forward"  
+  title: "Variable-speed playback"  
+  description: "Speed up or slow down videos to accommodate a wide variety of different watching scenarios."  
+# - icon: "fa-solid fa-shield-alt"  
+#   title: "Private by design"  
+#   description: "No ads, no tracking, and no harvesting of library info...ever! Your data is your own and we believe it should stay that way."  
+
+
+
