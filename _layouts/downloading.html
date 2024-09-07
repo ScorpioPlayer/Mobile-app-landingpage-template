@@ -10,7 +10,7 @@ layout: navigation
   <div class="app__infos">
     <h1 class="app__name">{{ site.data.app.name }}  <span style="color: silver; font-weight: 300; font-size: large;">{{ site.data.strings.app.android }}</span> </h1>  
     <span style="color: silver; font-weight: 300; font-size:small">{{ site.data.strings.app.fremium }}</span> 
-    <p class="app__description">{{ site.data.app.description }}</p>
+    <p class="app__description">{{ site.data.app.description_apk }}</p>
     <div class="app__buttons app__buttons--desktop">
       {% if site.data.app.apk != false %}
       <a href="{{ site.data.app.apk }}" class="app__button-play" target="_blank"><img src="/assets/images/apk-badge.png" alt="Get .APK"></a>
@@ -45,7 +45,7 @@ layout: navigation
   <div class="app__infos">
     <h1 class="app__name">{{ site.data.app.name }}  <span style="color: silver; font-weight: 300; font-size: large;">{{ site.data.strings.app.xbox }}</span> </h1>  
     <span style="color: silver; font-weight: 300; font-size:small">{{ site.data.strings.app.fremium }}</span> 
-    <p class="app__description">{{ site.data.app.description }}</p>
+    <p class="app__description">{{ site.data.app.description_xbox }}</p>
     <div class="app__buttons app__buttons--desktop">
       {% if site.data.app.microsoft != false %}
       <a href="{{ site.data.app.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
@@ -176,7 +176,7 @@ layout: navigation
   </div>
   <div class="app__infos">
     <h1 class="app__name">{{ site.data.mediaserver.name }}  <span style="color: silver; font-weight: 300;">{{ site.data.strings.app.macos }}</span> </h1>
-    <p class="app__description">{{ site.data.mediaserver.description }}</p>
+    <p class="app__description">{{ site.data.mediaserver.description_macos }}</p>
     <div class="app__buttons app__buttons--desktop">
       {% if site.data.mediaserver.macos != false %}
       <a href="{{ site.data.mediaserver.macos }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>
