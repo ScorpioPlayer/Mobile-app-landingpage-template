@@ -1,0 +1,66 @@
+{% if jekyll.environment == "production" %}
+<script src="/component/Bubbles.js"></script>
+<script>
+    // Function to generate a UUID
+    function generateUUID() {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    }
+
+    // Generate a new chat session ID
+    const chatSessionId = generateUUID();
+    var chatElement = document.getElementById("chat");
+    if (chatElement) {
+        var chatWindow = new Bubbles(chatElement, "chatWindow", {
+            inputCallbackFn: function (o) {
+                var userMessage = o.input;
+
+                var handleResponse = function (response) {
+                    var jsonResponse = JSON.parse(response);
+                    var message = jsonResponse;
+                    var responseLines = message.split('\n');
+                    responseLines = responseLines.filter(line => line.trim() !== '');
+                    chatWindow.talk({
+                        "response": {
+                            says: responseLines,
+                            reply: [
+                                {
+                                    question: "Ask another question",
+                                    answer: "start-over"
+                                }
+                            ]
+                        }
+                    }, "response");
+                };
+
+                fetch("/api/chatbot/ask", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ id: chatSessionId, message: userMessage })
+                })
+                    .then(response => response.text())
+                    .then(data => {
+                        handleResponse(data);
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                        handleResponse("Sorry, something went wrong. Please try again.");
+                    });
+            }
+        })
+
+        var convo = {
+            ice: {
+                says: ["Hi there! 👋", "How can I assist you today with Scorpio Player? 🎵✨"],
+                reply: [
+                ]
+            }
+        }
+        chatWindow.talk(convo)
+    }
+</script>
+{% endif %}

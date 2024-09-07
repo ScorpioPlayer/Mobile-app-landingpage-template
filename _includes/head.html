@@ -32,6 +32,15 @@
     });
 </script>
 
+{% if site.chatbot %}
+<link rel="stylesheet" media="all" href="/component/styles/setup.css">
+<link rel="stylesheet" media="all" href="/component/styles/says.css">
+<link rel="stylesheet" media="all" href="/component/styles/reply.css">
+<link rel="stylesheet" media="all" href="/component/styles/typing.css">
+<link rel="stylesheet" media="all" href="/component/styles/input.css">
+{% endif %}
+
+
 {% seo %}
 
 {% if ((jekyll.environment == 'production' or jekyll.environment == 'pwa') and site.google_analytics) %}
