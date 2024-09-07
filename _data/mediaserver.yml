@@ -1,0 +1,24 @@
+name: SCORPIO MEDIA SERVER 2025  
+description: Unleash Seamless 4K Streaming Power with Scorpio Media Server Your Ultimate Apple Silicon Companion.  
+full_description: |  
+  
+  <p>  
+    <h3>Scorpio Media Server</h3> is a companion app for Scorpio Player, engineered to fully leverage the power of Apple Silicon.  
+    It resolves LAN streaming issues, enabling seamless 4K high-quality video streaming without glitches. Stream video files  
+    directly from your macOS device and enjoy your media content anywhere, anytime.  
+  </p>  
+  <p>  
+    This lightweight server offers high-quality cross-device streaming, utilizing raw power based on Socket technology.  
+    Experience unparalleled streaming performance on your Apple Silicon-powered Mac, ensuring smooth playback whether you're  
+    streaming to your iPhone, iPad, or living room Apple TV, Xbox console.  
+  </p>  
+macos: https://forward.scorpioplayer.com/to?link=scorpio-media-server-mac&app=scorpioplayer.com&type=doc  
+dmg: https://forward.scorpioplayer.com/to?link=scorpio-media-server-macos-for-sideload&app=scorpioplayer.com&type=doc  
+installer: https://forward.scorpioplayer.com/to?link=scorpio-media-server-for-win10&app=scorpioplayer.com&type=doc  
+microsoft: https://forward.scorpioplayer.com/to?link=scorpio-media-server-for-windows&app=scorpioplayer.com&type=doc  
+screenshots_macos:  
+  - mediaserver/macos/1.png  
+  - mediaserver/macos/2.png  
+screenshots_windows:  
+  - mediaserver/windows/1.png  
+  - mediaserver/windows/2.png  

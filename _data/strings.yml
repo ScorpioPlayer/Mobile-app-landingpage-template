@@ -1,6 +1,7 @@
 app:
   screenshots: Screenshots
   tvos: Apple TV
+  macos: macOS
   xbox: Xbox Series S/X
   description: Description
   featured: Integration with

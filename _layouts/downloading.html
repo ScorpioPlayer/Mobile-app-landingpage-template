@@ -1,0 +1,129 @@
+---
+layout: default
+---
+<header class="app__header container">
+  <div class="app__logo-wrapper">
+    <img class="app__logo" src="/assets/images/appicon.png" alt="{{ site.data.app.name }} Icon">
+  </div>
+  <div class="app__infos">
+    <h1 class="app__name">{{ site.data.app.name }}</h1>
+    <p class="app__description">{{ site.data.app.description }}</p>
+    <div class="app__buttons app__buttons--desktop">
+      {% if site.data.app.apk != false %}
+      <a href="{{ site.data.app.apk }}" class="app__button-play" target="_blank"><img src="/assets/images/apk-badge.png" alt="Get .APK"></a>
+      {% endif %}
+
+      {% if site.data.app.apk != false %}
+      <a href="{{ site.data.app.apk }}" class="app__button-play" target="_blank"><img src="/assets/images/firetv-badge-round.png" alt="Get .APK"></a>
+      {% endif %}
+
+    </div>
+  </div>
+</header>
+
+<div class="app__buttons app__buttons--mobile container">
+  {% if site.data.app.apk != false %}
+  <a href="{{ site.data.app.apk }}" class="app__button-play" target="_blank"><img src="/assets/images/apk-badge.png" alt="Get .APK"></a>
+  {% endif %}
+  
+  {% if site.data.app.apk != false %}
+  <a href="{{ site.data.app.apk }}" class="app__button-play" target="_blank"><img src="/assets/images/firetv-badge-round.png" alt="Get .APK"></a>
+  {% endif %}
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<header class="app__header container">
+  <div class="app__logo-wrapper">
+    <img class="app__logo" src="/assets/images/icon.png" alt="{{ site.data.mediaserver.name }} Icon">
+  </div>
+  <div class="app__infos">
+    <h1 class="app__name">{{ site.data.mediaserver.name }}</h1>
+    <p class="app__description">{{ site.data.mediaserver.description }}</p>
+    <div class="app__buttons app__buttons--desktop">
+      {% if site.data.mediaserver.macos != false %}
+      <a href="{{ site.data.mediaserver.macos }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>
+      {% endif %}
+
+
+      {% if site.data.mediaserver.microsoft != false %}
+      <a href="{{ site.data.mediaserver.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
+      {% endif %}
+      
+
+      {% if site.data.mediaserver.dmg != false %}
+      <a href="{{ site.data.mediaserver.dmg }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play"></a>
+      {% endif %}
+
+      
+      {% if site.data.app.docker != false %}
+      <a href="{{ site.data.app.docker }}" class="app__button-play" target="_blank"><img src="/assets/images/docker-badge-round.png" alt="Get .APK"></a>
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+<section class="app__fulldescription app__section container">
+  <h2 class="app__section-title">{{ site.data.strings.mediaserver.description }}</h2>
+  <div class="app__fulldescription-content">
+    <p>{{ site.data.mediaserver.full_description }}</p>
+  </div>
+</section>
+
+<div class="app__buttons app__buttons--mobile container">
+  {% if site.data.mediaserver.macos != false %}
+  <a href="{{ site.data.mediaserver.macos }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>
+  {% endif %}
+  
+  {% if site.data.mediaserver.dmg != false %}
+  <a href="{{ site.data.mediaserver.dmg }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play"></a>
+  {% endif %}
+  
+
+  {% if site.data.mediaserver.microsoft != false %}
+  <a href="{{ site.data.mediaserver.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
+  {% endif %}
+
+  {% if site.data.app.docker != false %}
+  <a href="{{ site.data.app.docker }}" class="app__button-play" target="_blank"><img src="/assets/images/docker-badge-round.png" alt="Get .APK"></a>
+  {% endif %}
+  
+</div>
+
+<section class="app__screenshots app__section">
+  <div class="container">
+    <h2 class="app__section-title">{{ site.data.strings.app.screenshots }}</h2>
+  </div>
+  <div class="app__screenshots-wrapper container-desktop">
+    <div class="app__screenshots-list">
+      {% for screenshot in site.data.mediaserver.screenshots_macos %}
+      <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
+       <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="app__screenshots app__section">
+  <div class="container">
+    <h2 class="app__section-title">{{ site.data.strings.app.macos }}</h2>
+  </div>
+  <div class="app__screenshots-wrapper container-desktop">
+    <div class="app__screenshots-list">
+      {% for screenshot in site.data.mediaserver.screenshots_windows %}
+      <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
+       <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
