@@ -67,6 +67,8 @@ layout: default
   <a href="{{ site.data.app.web }}" class="app__button-web" target="_blank"><img src="/assets/images/pwa-badge.png" alt="Go to website"></a>
   {% endif %} -->
 </div>
+
+
 <section class="app__screenshots app__section">
   <div class="container">
     <h2 class="app__section-title">{{ site.data.strings.app.screenshots }}</h2>
@@ -81,6 +83,37 @@ layout: default
     </div>
   </div>
 </section>
+
+<section class="app__screenshots app__section">
+  <div class="container">
+    <h2 class="app__section-title">{{ site.data.strings.app.xbox }}</h2>
+  </div>
+  <div class="app__screenshots-wrapper container-desktop">
+    <div class="app__screenshots-list">
+      {% for screenshot in site.data.app.screenshots_uwp %}
+      <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
+       <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="app__screenshots app__section">
+  <div class="container">
+    <h2 class="app__section-title">{{ site.data.strings.app.tvos }}</h2>
+  </div>
+  <div class="app__screenshots-wrapper container-desktop">
+    <div class="app__screenshots-list">
+      {% for screenshot in site.data.app.screenshots_tvos %}
+      <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
+       <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="app__fulldescription app__section container">
   <h2 class="app__section-title">{{ site.data.strings.app.description }}</h2>
   <div class="app__fulldescription-content">

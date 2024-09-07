@@ -36,6 +36,21 @@ screenshots:
   - tinified/3.png
   - tinified/4.png
   - tinified/5.png
+screenshots_tvos:
+  - tvos/1.png
+  - tvos/2.png
+  - tvos/3.png
+  - tvos/5.png
+  - tvos/6.png
+screenshots_uwp:
+  - uwp/1.png
+  - uwp/2.png
+  - uwp/3.png
+  - uwp/5.png
+  - uwp/6.png
+  - uwp/7.png
+  - uwp/8.png
+  - uwp/9.png
 producthunt: https://scorpioplayer.com
 companies:
   - url: https://scorpioplayer.com
