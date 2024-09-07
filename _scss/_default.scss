@@ -387,3 +387,298 @@ h1, h2 {
   background-position-y: -10vh !important;
   background-repeat: no-repeat !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------------------------------- nav-bar
+
+
+/* Variables for themes */  
+$light-bg: #ffffff;  
+$light-text: #000000;  
+$light-border: #d8d8d8;  
+$dark-bg: #1e1e1e;  
+$dark-text: #ffffff;  
+$dark-border: #444444;  
+  
+/* Mixin for theme styles */  
+@mixin theme($bg, $text, $border) {  
+  background-color: $bg;  
+  color: $text;  
+  border-color: $border;  
+}  
+  
+/* Common styles */  
+.in {  
+  margin: 0 5%;  
+}  
+  
+.out {  
+  padding: 0 5%;  
+}  
+  
+.main-header {  
+  padding: 0 30px;  
+  height: 80px;  
+  border-bottom: 1px solid;  
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);  
+  @include theme($light-bg, $light-text, $light-border);  
+}  
+  
+.logo {  
+  font-weight: 700;  
+  font-size: 30px;  
+  margin-top: 14px;  
+  float: left;  
+}  
+  
+.main-nav {  
+  float: right;  
+  list-style: none;  
+  display: flex;  
+  flex-flow: row nowrap;  
+  margin-top: 26px;  
+  padding: 0;  
+}  
+  
+.nav-item {  
+  margin-left: 30px;  
+  position: relative;  
+}  
+  
+.main-nav a {  
+  text-decoration: none;  
+  color: #989898;  
+  white-space: nowrap;  
+}  
+  
+.main-nav a:hover {  
+  color: #614f4f;  
+}  
+  
+.main-nav a:hover:after {  
+  content: '';  
+  display: block;  
+  width: 50%;  
+  border-bottom: 2px solid #000;  
+}  
+  
+.lg-search {  
+  margin-left: 30px;  
+  position: relative;  
+}  
+  
+.lg-search:before {  
+  content: '|';  
+  position: absolute;  
+  top: 0;  
+  left: -32px;  
+  color: #989898;  
+}  
+  
+.lg-search input {  
+  margin: 0;  
+  padding: 0 0 0 30px;  
+  border: 1px solid #989898;  
+  width: 100%;  
+  height: 34px;  
+  position: relative;  
+  top: -4px;  
+}  
+  
+.lg-search .icon {  
+  background-color: transparent;  
+  position: absolute;  
+  left: 6px;  
+  top: 4px;  
+  color: #989898;  
+}  
+  
+.lg-search input:focus + .icon {  
+  color: black;  
+}  
+  
+.md-search,  
+.hamburger {  
+  display: none;  
+}  
+  
+@media screen and (max-width: 950px) and (min-width: 680px) {  
+  .lg-search {  
+    display: none;  
+  }  
+  
+  .md-search {  
+    display: block;  
+  }  
+}  
+  
+@media screen and (max-width: 679px) {  
+  .main-header {  
+    min-width: 320px;  
+    height: 50px;  
+    border-bottom: 1px solid;  
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);  
+  }  
+  
+  .logo {  
+    font-size: 20px;  
+    margin-top: 10px;  
+  }  
+  
+  .hamburger {  
+    right: 0;  
+    width: 50px;  
+    height: 50px;  
+    display: block;  
+    z-index: 2;  
+    position: absolute;  
+    text-align: center;  
+    line-height: 50px;  
+    font-family: 'FontAwesome';  
+    color: silver; /* Set the color to silver */  
+    cursor: pointer;  
+  }  
+  
+  .hamburger:after {  
+    font-family: 'FontAwesome';  
+    content: '\f0c9'; /* FontAwesome icon for hamburger menu */  
+  }  
+  
+  .close-menu {  
+    background-color: #efefef;  
+    height: 100%;  
+    color: silver; /* Ensure the close-menu icon is also silver */  
+  }  
+  
+  .close-menu:after {  
+    font-family: 'FontAwesome';  
+    content: '\f060'; /* FontAwesome icon for arrow */  
+  }  
+  
+  .main-nav-mob {  
+    display: flex;  
+    flex-flow: column nowrap;  
+    background-color: white;  
+    width: 100%;  
+    height: 100vh; /* Ensure it covers the full viewport height */  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    transform: translateX(-100%); /* Start off-screen */  
+    padding: 30px 30px; /* Adjust padding if needed */  
+    margin: 0;  
+    z-index: 1;  
+    transition: transform 0.3s ease-out;  
+  }  
+  
+  .move {  
+    transform: translateX(0); /* Bring on-screen */  
+  }  
+  
+  .nav-item {  
+    margin: 0;  
+  }  
+  
+  .main-nav-mob a {  
+    display: block;  
+    border-bottom: 1px solid #989898;  
+    padding: 5px 0;  
+  }  
+  
+  .main-nav-mob a:hover {  
+    color: #000;  
+  }  
+  
+  .main-nav-mob a:hover:after {  
+    display: none;  
+  }  
+  
+  .search {  
+    order: 0;  
+    margin-bottom: 20px;  
+  }  
+  
+  .lg-search {  
+    margin-left: 0;  
+  }  
+  
+  .lg-search:before {  
+    display: none;  
+  }  
+  
+  .lg-search input {  
+    width: 100%;  
+  }  
+}  
+  
+/* Dark theme styles */  
+.dark-theme {  
+  @include theme($dark-bg, $dark-text, $dark-border);  
+  
+  .main-header {  
+    @include theme($dark-bg, $dark-text, $dark-border);  
+  }  
+  
+  .logo {  
+    color: $dark-text;  
+  }  
+  
+  .main-nav a {  
+    color: $dark-text;  
+  }  
+  
+  .main-nav a:hover {  
+    color: lighten($dark-text, 20%);  
+  }  
+  
+  .main-nav a:hover:after {  
+    border-bottom-color: lighten($dark-text, 20%);  
+  }  
+  
+  .lg-search input {  
+    border-color: $dark-border;  
+    background-color: darken($dark-bg, 10%);  
+    color: $dark-text;  
+  }  
+  
+  .lg-search .icon {  
+    color: $dark-text;  
+  }  
+  
+  .hamburger {  
+    color: $dark-text;  
+  }  
+  
+  .close-menu {  
+    background-color: darken($dark-bg, 10%);  
+  }  
+  
+  .main-nav-mob {  
+    background-color: $dark-bg;  
+    color: $dark-text;  
+  }  
+  
+  .main-nav-mob a {  
+    border-bottom-color: $dark-border;  
+  }  
+  
+  .main-nav-mob a:hover {  
+    color: lighten($dark-text, 20%);  
+  }  
+}  
+
+
+// -------------------------------------------------------------- nav-bar

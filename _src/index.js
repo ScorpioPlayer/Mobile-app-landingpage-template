@@ -14,3 +14,32 @@ function addDarkmodeWidget() {
   new Darkmode().showWidget()
 }
 window.addEventListener('load', addDarkmodeWidget)
+
+
+
+// Select the hamburger element and main-nav-mob element  
+var hamburger = document.querySelector('.hamburger');  
+var mainNavMob = document.querySelector('.main-nav-mob');  
+  
+// Add a click event listener to the hamburger element  
+hamburger.addEventListener('click', function() {  
+  // Toggle the 'move' class on the main-nav-mob element  
+  mainNavMob.classList.toggle('move');  
+    
+  // Toggle the 'close-menu' class on the hamburger element  
+  this.classList.toggle('close-menu');  
+});  
+
+
+
+// $(".hamburger").click(function(){
+//   $(".main-nav-mob").toggleClass("move");
+//   $(this).toggleClass("close-menu"); // осталось только научить меню "уезжать" вправо.
+// });
+
+
+// 	$(".main-nav-mob").css("left", "-999px");
+// $(".hamburger").click(function(){
+
+//     $(".main-nav-mob").toggle().css("left", "0");
+// 	});
