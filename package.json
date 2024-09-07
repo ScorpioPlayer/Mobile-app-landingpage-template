@@ -11,7 +11,9 @@
     "build": "npm run-script clean:project && cross-env NODE_ENV=production webpack --env config=prod --progress --profile --color && cross-env JEKYLL_ENV=production bundle exec jekyll build",
     "build:pwa": "npm run-script clean:project && cross-env NODE_ENV=production webpack --env config=pwa --progress --profile --color && cross-env JEKYLL_ENV=pwa bundle exec jekyll build && workbox generateSW config/sw.config.js --verbose",
     "serve:dist": "http-server _site",
-    "clean:project": "rimraf ./_site ./assets"
+    "clean:project": "rimraf ./_site ./assets",
+    "copy": "powershell -Command \"Copy-Item -Path 'C:\\GitHub\\Mobile-app-landingpage-template\\_site\\*' -Destination 'C:\\GitHub\\scorpioplayer.com\\scorpioplayer.com\\wwwroot\\' -Recurse -Force\"",
+    "publish": "npm run build && powershell -Command \"Copy-Item -Path 'C:\\GitHub\\Mobile-app-landingpage-template\\_site\\*' -Destination 'C:\\GitHub\\scorpioplayer.com\\scorpioplayer.com\\wwwroot\\' -Recurse -Force\""  
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
