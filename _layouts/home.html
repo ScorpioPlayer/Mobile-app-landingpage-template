@@ -27,8 +27,8 @@ layout: default
   </div>
   <div class="app__infos">
     <h1 class="app__name">{{ site.data.app.name }}</h1>
-    <span style="color: silver; font-weight: 300;">{{ site.data.strings.app.fremium }}</span> 
-    <p class="app__description">{{ site.data.app.description }}</p>
+    <span style="color: silver; font-weight: 300; font-size:small">{{ site.data.strings.app.fremium }}</span> 
+    <p class="app__description" style="color: purple; font-weight: 700;font-family: 'Quicksand', sans-serif;">{{ site.data.app.description }}</p>
     <div class="app__buttons app__buttons--desktop">
       {% if site.data.app.iOS != false %}
       <a href="{{ site.data.app.iOS }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>

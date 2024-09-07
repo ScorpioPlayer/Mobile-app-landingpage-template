@@ -105,14 +105,6 @@ layout: default
   </div>
 </header>
 
-
-<section class="app__fulldescription app__section container">
-  <h2 class="app__section-title">{{ site.data.strings.mediaserver.description }}</h2>
-  <div class="app__fulldescription-content">
-    <p>{{ site.data.mediaserver.full_description }}</p>
-  </div>
-</section>
-
 <div class="app__buttons app__buttons--mobile container">
   {% if site.data.mediaserver.macos != false %}
   <a href="{{ site.data.mediaserver.macos }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>
@@ -123,6 +115,15 @@ layout: default
   {% endif %}
   
 </div>
+
+
+<section class="app__fulldescription app__section container">
+  <h2 class="app__section-title">{{ site.data.strings.mediaserver.description }}</h2>
+  <div class="app__fulldescription-content">
+    <p>{{ site.data.mediaserver.full_description }}</p>
+  </div>
+</section>
+
 
 <section class="app__screenshots app__section">
   <div class="container">
