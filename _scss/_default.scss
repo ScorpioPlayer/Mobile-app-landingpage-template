@@ -682,3 +682,101 @@ $dark-border: #444444;
 
 
 // -------------------------------------------------------------- nav-bar
+
+
+
+// -------------------------------------------------------------- testimonials
+
+.app__testimonials-content {  
+  display: grid;  
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 20px;  
+  justify-content: center;  
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);   
+  }
+}  
+
+.testimonial {  
+  background-color: #282828; /* Kept the original background color */  
+  border-radius: 10px;  
+  padding: 20px;  
+  width: 300px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+  text-align: left;  
+}  
+
+.testimonial .stars {  
+  color: #9370DB; /* Changed to a medium purple color */  
+  font-size: 1.5em;  
+}  
+
+.testimonial h3 {  
+  color: #9370DB; /* Changed to a medium purple color */  
+}  
+
+.testimonial a {  
+  color: #9370DB; /* Changed to a medium purple color */  
+  text-decoration: none;  
+}  
+
+.testimonial a:hover {  
+  text-decoration: underline;  
+}  
+
+.scrollable {  
+  color: silver;  
+  max-height: 150px; /* Adjust this value to your desired max height */  
+  overflow-y: scroll; /* Enables vertical scrolling */  
+  padding: 10px; /* Optional: Adds some padding for better readability */  
+}  
+
+/* Hide scrollbar for Chrome, Safari, and Opera */  
+.scrollable::-webkit-scrollbar {  
+  display: none;  
+}  
+
+/* Hide scrollbar for IE, Edge, and Firefox */  
+.scrollable {  
+  -ms-overflow-style: none;  /* IE and Edge */  
+  scrollbar-width: none;  /* Firefox */  
+}  
+
+.center-align {  
+  text-align: center;  
+}  
+.big-title {  
+  font-size: 3em; /* Adjust the size as needed */  
+}  
+
+
+// -------------------------------------------------------------- promo
+
+.promo-section {  
+  background-color: #6a1b9a; // Purple color  
+  color: white;  
+  text-align: center;  
+  padding: 20px 0;  
+
+  .container {  
+      max-width: 1200px;  
+      margin: 0 auto;  
+      padding: 0 20px;  
+  }  
+
+  h2 {  
+      font-size: 2em;  
+      margin-bottom: 10px;  
+  }  
+
+  p {  
+      font-size: 1.2em;  
+      margin-bottom: 20px;  
+  }  
+
+  .app-store-button img {  
+      width: 150px; // Adjust size as needed  
+  }  
+}  

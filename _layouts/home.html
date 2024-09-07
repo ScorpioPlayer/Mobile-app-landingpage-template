@@ -8,37 +8,37 @@ layout: navigation
   </div>
   <div class="app__infos">
     <h1 class="app__name">{{ site.data.app.name }}</h1>
-    <span style="color: silver; font-weight: 300; font-size:small">{{ site.data.strings.app.fremium }}</span> 
+    <span style="color: silver; font-weight: 300; font-size:small">{{ site.data.strings.app.fremium }}</span>
     <p class="app__description" style="color: purple; font-weight: 700;font-family: 'Quicksand', sans-serif;">{{ site.data.app.description }}</p>
     <div class="app__buttons app__buttons--desktop">
       {% if site.data.app.iOS != false %}
-      <a href="{{ site.data.app.iOS }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>
+      <a href="{{ site.data.app.iOS }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"/></a>
       {% endif %}
 
 
       {% if site.data.app.microsoft != false %}
-      <a href="{{ site.data.app.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
+      <a href="{{ site.data.app.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"/></a>
       {% endif %}
-      
+
 
       {% if site.data.app.android != false %}
-      <a href="{{ site.data.app.android }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play"></a>
+      <a href="{{ site.data.app.android }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play"/></a>
       {% endif %}
     </div>
   </div>
 </header>
 <div class="app__buttons app__buttons--mobile container">
   {% if site.data.app.iOS != false %}
-  <a href="{{ site.data.app.iOS }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>
+  <a href="{{ site.data.app.iOS }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"/></a>
   {% endif %}
-  
+
   {% if site.data.app.android != false %}
-  <a href="{{ site.data.app.android }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play"></a>
+  <a href="{{ site.data.app.android }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play" /></a>
   {% endif %}
-  
+
 
   {% if site.data.app.microsoft != false %}
-  <a href="{{ site.data.app.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
+  <a href="{{ site.data.app.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store" /></a>
   {% endif %}
 </div>
 
@@ -51,7 +51,7 @@ layout: navigation
     <div class="app__screenshots-list">
       {% for screenshot in site.data.app.screenshots %}
       <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
-       <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
+        <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
       </a>
       {% endfor %}
     </div>
@@ -66,7 +66,7 @@ layout: navigation
     <div class="app__screenshots-list">
       {% for screenshot in site.data.app.screenshots_uwp %}
       <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
-       <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
+        <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
       </a>
       {% endfor %}
     </div>
@@ -81,7 +81,7 @@ layout: navigation
     <div class="app__screenshots-list">
       {% for screenshot in site.data.app.screenshots_tvos %}
       <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
-       <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
+        <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
       </a>
       {% endfor %}
     </div>
@@ -96,7 +96,7 @@ layout: navigation
     <div class="app__screenshots-list">
       {% for screenshot in site.data.app.screenshots_androidtv %}
       <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
-       <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
+        <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
       </a>
       {% endfor %}
     </div>
@@ -110,12 +110,52 @@ layout: navigation
     <p>{{ site.data.app.full_description }}</p>
   </div>
 </section>
+
+<section class="app__testimonials app__section container">  
+  <h1 class="app__section-title center-align">{{ site.data.strings.app.testimonials }}</h1>  
+  <p class="app__section-desc center-align">{{ site.data.strings.app.testimonials_desc }}</p>  
+  <div class="app__testimonials-content">  
+    {% for testimonial in site.data.testimonials %}  
+    <div class="testimonial">  
+      <div class="stars">{{ testimonial.stars }}</div>  
+      <h3>{{ testimonial.title }}</h3>  
+      <p style="color: silver;">{{ testimonial.date }} by {{ testimonial.author }}</p>  
+      <p style="color: silver;" class="scrollable">{{ testimonial.content | truncate_words: 100 }}</p>  
+      <a href="{{ testimonial.link }}">read more</a>  
+    </div>  
+    {% endfor %}  
+  </div>  
+</section>  
+
+
+<section class="promo-section">  
+  <div class="container">  
+      <h2>{{ site.data.strings.app.promotion }}</h2>  
+      <p>{{ site.data.strings.app.promotion_desc }}</p>  
+      <div class="app__buttons app__buttons--desktop">
+        {% if site.data.app.iOS != false %}
+        <a href="{{ site.data.app.iOS }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>
+        {% endif %}
+      
+        {% if site.data.app.android != false %}
+        <a href="{{ site.data.app.android }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play"></a>
+        {% endif %}
+      
+      
+        {% if site.data.app.microsoft != false %}
+        <a href="{{ site.data.app.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
+        {% endif %}
+      </div>
+  </div>  
+</section>  
+
+
 <section class="app__featured app__section container">
   <h2 class="app__section-title">{{ site.data.strings.app.featured }}</h2>
   <div class="app__featured-content">
     {% for company in site.data.app.companies %}
     <a href="{{ company.url }}" target="_blank" class="app__featured-company">
-     <img src="/assets/images/companies/{{ company.image }}" class="app__featured-image">
+      <img src="/assets/images/companies/{{ company.image }}" class="app__featured-image">
     </a>
     {% endfor %}
   </div>
