@@ -15,6 +15,8 @@ full_description: |
 macos: https://forward.scorpioplayer.com/to?link=scorpio-media-server-mac&app=scorpioplayer.com&type=doc  
 dmg: https://forward.scorpioplayer.com/to?link=scorpio-media-server-macos-for-sideload&app=scorpioplayer.com&type=doc  
 installer: https://forward.scorpioplayer.com/to?link=scorpio-media-server-for-win10&app=scorpioplayer.com&type=doc  
+dmg: https://forward.scorpioplayer.com/to?link=scorpio-media-server-macos-for-sideload&app=scorpioplayer.com&type=doc
+docker: https://forward.scorpioplayer.com/to?link=scorpio-media-server-docker-hub&app=scorpioplayer.com&type=doc
 microsoft: https://forward.scorpioplayer.com/to?link=scorpio-media-server-for-windows&app=scorpioplayer.com&type=doc  
 screenshots_macos:  
   - mediaserver/macos/1.png  

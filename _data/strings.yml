@@ -2,6 +2,7 @@ app:
   screenshots: Screenshots
   tvos: Apple TV
   macos: macOS
+  android: Android/TV
   fremium: Free app with optional PREMIUM features*
   xbox: Xbox Series S/X
   description: Description
