@@ -266,7 +266,7 @@ layout: navigation
   </div>
   <div class="app__infos">
     <h1 class="app__name">{{ app.name }}</h1>
-    <h1 class="app__name">{{ app.appId }}</h1>
+    <!-- <h1 class="app__name">{{ app.appId }}</h1> -->
     <p class="app__description" style="color: purple; font-weight: 700;font-family: 'Quicksand', sans-serif;">{{
       app.description }}</p>
     <div class="app__buttons app__buttons--desktop">
@@ -319,13 +319,5 @@ layout: navigation
     </div>
   </div>
 </section>
-
-<!-- <section class="app__fulldescription app__section container">
-  <h2 class="app__section-title">{{ site.data.strings.app.description }}</h2>
-  <div class="app__fulldescription-content">
-    <p>{{ app.fulldescription  }}</p>
-  </div>
-</section> -->
-
 
 {% endfor %}
