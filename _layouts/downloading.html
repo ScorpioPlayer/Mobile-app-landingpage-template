@@ -8,8 +8,9 @@ layout: navigation
     <img class="app__logo" src="/assets/images/appicon.png" alt="{{ site.data.app.name }} Icon">
   </div>
   <div class="app__infos">
-    <h1 class="app__name">{{ site.data.app.name }}  <span style="color: silver; font-weight: 300; font-size: large;">{{ site.data.strings.app.android }}</span> </h1>  
-    <span style="color: silver; font-weight: 300; font-size:small">{{ site.data.strings.app.fremium }}</span> 
+    <h1 class="app__name">{{ site.data.app.name }} <span style="color: silver; font-weight: 300; font-size: large;">{{
+        site.data.strings.app.android }}</span> </h1>
+    <span style="color: silver; font-weight: 300; font-size:small">{{ site.data.strings.app.fremium }}</span>
     <p class="app__description">{{ site.data.app.description_apk }}</p>
     <div class="app__buttons app__buttons--desktop">
       {% if site.data.app.apk != false %}
@@ -28,9 +29,10 @@ layout: navigation
   {% if site.data.app.apk != false %}
   <a href="{{ site.data.app.apk }}" class="app__button-play" target="_blank"><img src="/assets/images/apk-badge.png" alt="Get .APK"></a>
   {% endif %}
-  
+
   {% if site.data.app.apk != false %}
-  <a href="{{ site.data.app.apk }}" class="app__button-play" target="_blank"><img src="/assets/images/firetv-badge-round.png" alt="Get .APK FireTV"></a>
+  <a href="{{ site.data.app.apk }}" class="app__button-play" target="_blank"><img
+      src="/assets/images/firetv-badge-round.png" alt="Get .APK FireTV"></a>
   {% endif %}
 
 </div>
@@ -43,27 +45,29 @@ layout: navigation
     <img class="app__logo" src="/assets/images/appicon.png" alt="{{ site.data.app.name }} Icon">
   </div>
   <div class="app__infos">
-    <h1 class="app__name">{{ site.data.app.name }}  <span style="color: silver; font-weight: 300; font-size: large;">{{ site.data.strings.app.xbox }}</span> </h1>  
-    <span style="color: silver; font-weight: 300; font-size:small">{{ site.data.strings.app.fremium }}</span> 
+    <h1 class="app__name">{{ site.data.app.name }} <span style="color: silver; font-weight: 300; font-size: large;">{{
+        site.data.strings.app.xbox }}</span> </h1>
+    <span style="color: silver; font-weight: 300; font-size:small">{{ site.data.strings.app.fremium }}</span>
     <p class="app__description">{{ site.data.app.description_xbox }}</p>
     <div class="app__buttons app__buttons--desktop">
       {% if site.data.app.microsoft != false %}
       <a href="{{ site.data.app.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
       {% endif %}
-      
+
 
       {% if site.data.app.xboxmsix != false %}
       <a href="{{ site.data.app.xboxmsix }}" class="app__button-play" target="_blank"><img src="/assets/images/xbox-badge.png" alt="Get .APK"></a>
       {% endif %}
 
-      <a href="{{ site.data.app.xboxgamemodeblog }}" class="app__button-web" target="_blank">Maximum Performance/Game Mode Enabled</a>
+      <a href="{{ site.data.app.xboxgamemodeblog }}" class="app__button-web" target="_blank">Maximum Performance/Game
+        Mode Enabled</a>
     </div>
   </div>
 </header>
 
 <div class="app__buttons app__buttons--mobile container">
 
-  
+
   {% if site.data.app.microsoft != false %}
   <a href="{{ site.data.app.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
   {% endif %}
@@ -74,7 +78,8 @@ layout: navigation
   {% endif %}
 
 
-  <a href="{{ site.data.app.xboxgamemodeblog }}" class="app__button-web" target="_blank">Maximum Performance/Game Mode Enabled</a>
+  <a href="{{ site.data.app.xboxgamemodeblog }}" class="app__button-web" target="_blank">Maximum Performance/Game Mode
+    Enabled</a>
 
 </div>
 
@@ -86,8 +91,9 @@ layout: navigation
   </div>
   <div class="app__infos">
     <h1 class="app__name">{{ site.data.app.name }}</h1>
-    <span style="color: silver; font-weight: 300; font-size:small">{{ site.data.strings.app.fremium }}</span> 
-    <p class="app__description" style="color: purple; font-weight: 700;font-family: 'Quicksand', sans-serif;">{{ site.data.app.description }}</p>
+    <span style="color: silver; font-weight: 300; font-size:small">{{ site.data.strings.app.fremium }}</span>
+    <p class="app__description" style="color: purple; font-weight: 700;font-family: 'Quicksand', sans-serif;">{{
+      site.data.app.description }}</p>
     <div class="app__buttons app__buttons--desktop">
       {% if site.data.app.iOS != false %}
       <a href="{{ site.data.app.iOS }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>
@@ -97,7 +103,7 @@ layout: navigation
       {% if site.data.app.microsoft != false %}
       <a href="{{ site.data.app.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
       {% endif %}
-      
+
 
       {% if site.data.app.android != false %}
       <a href="{{ site.data.app.android }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play"></a>
@@ -109,11 +115,11 @@ layout: navigation
   {% if site.data.app.iOS != false %}
   <a href="{{ site.data.app.iOS }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>
   {% endif %}
-  
+
   {% if site.data.app.android != false %}
   <a href="{{ site.data.app.android }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play"></a>
   {% endif %}
-  
+
 
   {% if site.data.app.microsoft != false %}
   <a href="{{ site.data.app.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
@@ -140,7 +146,7 @@ layout: navigation
       <a href="{{ site.data.mediaserver.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store"></a>
       {% endif %}
 
-      
+
       {% if site.data.mediaserver.docker != false %}
       <a href="{{ site.data.mediaserver.docker }}" class="app__button-play" target="_blank"><img src="/assets/images/docker-badge-round.png" alt="Get .APK"></a>
       {% endif %}
@@ -166,7 +172,7 @@ layout: navigation
   {% if site.data.mediaserver.installer != false %}
   <a href="{{ site.data.mediaserver.installer }}" class="app__button-play" target="_blank"><img src="/assets/images/clickonce-badge.png" alt="Get .APK"></a>
   {% endif %}
-  
+
 </div>
 
 
@@ -175,7 +181,8 @@ layout: navigation
     <img class="app__logo" src="/assets/images/icon.png" alt="{{ site.data.app.name }} Icon">
   </div>
   <div class="app__infos">
-    <h1 class="app__name">{{ site.data.mediaserver.name }}  <span style="color: silver; font-weight: 300;">{{ site.data.strings.app.macos }}</span> </h1>
+    <h1 class="app__name">{{ site.data.mediaserver.name }} <span style="color: silver; font-weight: 300;">{{
+        site.data.strings.app.macos }}</span> </h1>
     <p class="app__description">{{ site.data.mediaserver.description_macos }}</p>
     <div class="app__buttons app__buttons--desktop">
       {% if site.data.mediaserver.macos != false %}
@@ -194,11 +201,11 @@ layout: navigation
   {% if site.data.mediaserver.macos != false %}
   <a href="{{ site.data.mediaserver.macos }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore"></a>
   {% endif %}
-  
+
   {% if site.data.mediaserver.dmg != false %}
   <a href="{{ site.data.mediaserver.dmg }}" class="app__button-play" target="_blank"><img src="/assets/images/dmg-badge.png" alt="Get on .DMG Installer"></a>
   {% endif %}
-  
+
 </div>
 
 
@@ -218,7 +225,7 @@ layout: navigation
     <div class="app__screenshots-list">
       {% for screenshot in site.data.mediaserver.screenshots_macos %}
       <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
-       <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
+        <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
       </a>
       {% endfor %}
     </div>
@@ -233,9 +240,92 @@ layout: navigation
     <div class="app__screenshots-list">
       {% for screenshot in site.data.mediaserver.screenshots_windows %}
       <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
-       <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
+        <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
       </a>
       {% endfor %}
     </div>
   </div>
 </section>
+
+
+
+
+
+<hr style="border: 0; height: 1px; background-color: silver;">  
+<section class="app__screenshots app__section">
+  <div class="container">
+    <h1 style="text-align: center;">{{ site.data.strings.app.otherapps }}</h1>
+  </div>
+</section>
+
+{% for app in site.data.apps %}
+
+<header class="app__header container">
+  <div class="app__logo-wrapper">
+    <img class="app__logo" src="{{ app.icon }}" alt="{{ app.name }} Icon">
+  </div>
+  <div class="app__infos">
+    <h1 class="app__name">{{ app.name }}</h1>
+    <h1 class="app__name">{{ app.appId }}</h1>
+    <p class="app__description" style="color: purple; font-weight: 700;font-family: 'Quicksand', sans-serif;">{{
+      app.description }}</p>
+    <div class="app__buttons app__buttons--desktop">
+      {% if app.iOS %}
+      <a href="{{ app.iOS }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore" /></a>
+      {% endif %}
+
+
+      {% if app.microsoft %}
+      <a href="{{ app.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store" /></a>
+      {% endif %}
+
+
+      {% if app.android %}
+      <a href="{{ app.android }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play" /></a>
+      {% endif %}
+    </div>
+  </div>
+</header>
+<div class="app__buttons app__buttons--mobile container">
+  {% if app.iOS %}
+  <a href="{{ app.iOS }}" class="app__button-ios" target="_blank"><img src="/assets/images/ios.svg" alt="Get on Appstore" /></a>
+  {% endif %}
+
+  {% if app.android %}
+  <a href="{{ app.android }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play" /></a>
+  {% endif %}
+
+
+  {% if app.microsoft %}
+  <a href="{{ app.microsoft }}" class="app__button-web" target="_blank"><img src="/assets/images/new-badge-dark.png" alt="Go to Microsoft Store" /></a>
+  {% endif %}
+
+
+  <hr style="border: 0; height: 1px; background-color: silver;">  
+</div>
+
+
+<section class="app__screenshots app__section">
+  <div class="container">
+    <h2 class="app__section-title">{{ site.data.strings.app.screenshots }}</h2>
+  </div>
+  <div class="app__screenshots-wrapper container-desktop">
+    <div class="app__screenshots-list">
+      {% for screenshot in app.screenshots %}
+      <a href="{{ screenshot }}" class="lightbox">
+        <img src="{{ screenshot }}" class="app__screenshot">
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- <section class="app__fulldescription app__section container">
+  <h2 class="app__section-title">{{ site.data.strings.app.description }}</h2>
+  <div class="app__fulldescription-content">
+    <p>{{ app.fulldescription  }}</p>
+  </div>
+</section> -->
+
+
+{% endfor %}
