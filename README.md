@@ -102,4 +102,10 @@ If you like this project, feel free to donate:
 
 ## Deployment
 
-Copy-Item -Path "C:\GitHub\Mobile-app-landingpage-template\_site\*" -Destination "C:\GitHub\scorpioplayer.com\scorpioplayer.com\wwwroot\" -Recurse -Force 
+```bash
+# Copy built site to deployment directory
+rsync -av --delete _site/ /Volumes/GitHub/scorpioplayer.com/scorpioplayer.com/wwwroot/
+
+# Or use npm script
+npm run copy
+``` 

@@ -9,3 +9,7 @@ yarn-error.log
 # editors
 .idea
 .jekyll-cache
+/.claude
+/.vs
+/.vs/Mobile-app-landingpage-template/CopilotIndices/17.14.1368.60722/CodeChunks.db
+/.vs

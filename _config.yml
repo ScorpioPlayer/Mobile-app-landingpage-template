@@ -27,7 +27,7 @@ ampdir: amp
 
 github: https://github.com/ScorpioPlayer/Feedback
 
-chatbot: true
+chatbot: false
 
 ### Google webmaster tools, Google Analytics, Doorbell and Cookie consent uncomment and put the API key
 #webmaster_verifications:

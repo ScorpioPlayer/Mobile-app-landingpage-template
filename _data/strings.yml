@@ -25,5 +25,8 @@ footer:
     - title: YouTube
       url: https://www.youtube.com/@scorpio_player
       target: _blank
+    - title: Contact
+      url: /contact
+      target: _blank
     - title: Privacy
       url: /privacy

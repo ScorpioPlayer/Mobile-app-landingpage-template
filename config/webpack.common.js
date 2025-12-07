@@ -3,17 +3,18 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+// const FaviconsWebpackPlugin = require('favicons-webpack-plugin'); // Disabled - requires libvips
 
 module.exports = {
   entry: {
     app: './_src/index.js',
   },
   plugins: [
-    new FaviconsWebpackPlugin({
-      logo: './icon.png',
-      manifest: './config/manifest.json',
-    }),
+    // Favicons disabled - requires sharp/libvips native build
+    // new FaviconsWebpackPlugin({
+    //   logo: './icon.png',
+    //   manifest: './config/manifest.json',
+    // }),
     new HtmlWebpackPlugin({
       template: './_src/template/default.html',
       filename: '../_layouts/default.html',

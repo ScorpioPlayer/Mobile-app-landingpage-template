@@ -4,7 +4,7 @@ const CommonConfig = require('./webpack.common.js');
 const path = require('path');
 const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
+// const ImageminPlugin = require('imagemin-webpack-plugin').default; // Disabled - requires native binaries
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = Merge(CommonConfig, {
@@ -27,6 +27,7 @@ module.exports = Merge(CommonConfig, {
       minimize: true,
       debug: false,
     }),
-    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
+    // ImageminPlugin disabled - requires optipng/native binaries
+    // new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
   ],
 });
